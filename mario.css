@@ -1,0 +1,380 @@
+ * { box-sizing: border-box;}
+
+body{
+  background-image: url("images/super-mario/fondo.gif");
+}
+
+.ground-abajo {
+  width: 3000px;
+  height: 113px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("images/super-mario/big-ground.png");
+}
+
+
+.ground-arriba {
+  width: 3000px;
+  height: 113px;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  background-image: url("images/super-mario/big-ground.png");
+}
+
+.arbusto-pequeño-arriba {
+  width: 150px;
+  height: 75px;
+  top: 325px;
+  position: absolute;
+  background-image: url("images/super-mario/small-bush.png");
+}
+
+.arbusto-izquierdo-arriba{
+    left: 400px;
+}
+
+.arbusto-derecho-arriba{
+    right: 500px;
+}
+
+.arbusto-pequeño {
+  width: 150px;
+  height: 75px;
+  bottom: 112px;
+  position: absolute;
+  background-image: url("images/super-mario/small-bush.png");
+}
+
+.arbusto-izquierdo{
+    left: 400px;
+}
+
+.arbusto-derecho{
+    left: 800px;
+}
+
+.castillo{
+  width: 287px;
+  height: 259px;
+  bottom: 112px;
+  right: 50px;
+  position: absolute;
+  background-image: url("images/super-mario/castle.png");
+}
+
+.mario {
+  width: 150px;
+  height: 150px;
+  background-image: url("images/super-mario/personaje.gif");
+  position: absolute;
+  top: 280px;
+  z-index: 20;
+}
+
+
+.mario {
+    animation: aparece-derecha 9s ease infinite forwards;
+}
+
+.mario-abajo {
+  width: 150px;
+  height: 150px;
+  background-image: url("images/super-mario/personaje1.gif");
+  position: absolute;
+  bottom: 110px;
+  left: -150px;
+  z-index: 21;
+}
+
+.mario-abajo {
+    animation: aparece-izquierda 8s ease 4s infinite forwards;
+}
+
+.enemigo-1 {
+  width: 100px;
+  height: 100px;
+  background-image: url("images/super-mario/enemigo.gif");
+  position: absolute;
+  bottom: 96px;
+  z-index: 20;
+}
+
+.enemigo-1 {
+    animation: aparece-izquierda 20s ease infinite forwards;
+}
+
+.enemigo-2 {
+  width: 75px;
+  height: 75px;
+  background-image: url("images/super-mario/gomba.gif");
+  position: absolute;
+  top: 325px;
+  z-index: 18;
+}
+
+.enemigo-2 {
+    animation: aparece-derecha 20s ease infinite forwards;
+}
+
+.tortuga-voladora {
+  width: 200px;
+  height: 200px;
+  background-image: url("images/super-mario/enemigo1.gif");
+  position: absolute;
+  bottom: 270px;
+  left: 350px;
+  z-index: 22;
+}
+
+.tortuga-voladora {
+    animation: arriba-abajo 10s steps(1000) infinite forwards;
+}
+
+.fuego {
+  width: 50px;
+  height: 50px;
+  background-image: url("images/super-mario/fuego.png");
+  position: absolute;
+  bottom: 340px;
+  left: 430px;
+  z-index: 21
+}
+
+.fuego {
+  animation: diagonal 2s steps(1000) infinite forwards;
+}
+
+.moneda-1 {
+  width: 249px;
+  height: 131px;
+  background-image: url("images/super-mario/moneda.gif");
+  position: absolute;
+  bottom: 340px;
+  left: 715px;
+}
+
+.moneda-2 {
+  width: 249px;
+  height: 131px;
+  background-image: url("images/super-mario/moneda.gif");
+  position: absolute;
+  bottom: 340px;
+  left: 570px;
+}
+
+.planta {
+  width: 114px;
+  height: 138px;
+  background-image: url("images/super-mario/planta.gif");
+  position: absolute;
+  bottom: 120px;
+  left: 190px;
+  z-index: 1;
+}
+
+.planta {
+  animation: aparece-planta 20s steps(1000) infinite forwards;
+}
+
+
+.tuberia-grande {
+  width: 150px;
+  height: 217px;
+  background-image: url("images/super-mario/big-pipe.png");
+  position: absolute;
+  bottom: 112px;
+  left: 1150px;
+}
+
+.tuberia-pequeña-abajo {
+  width: 186px;
+  height: 163px;
+  background-image: url("images/super-mario/small-pipe.png");
+  position: absolute;
+  bottom: 112px;
+  left: 150px;
+  z-index: 2;
+
+}
+
+.tuberia-pequeña-arriba {
+  width: 186px;
+  height: 163px;
+  background-image: url("images/super-mario/small-pipe.png");
+  position: absolute;
+  top: 238px;
+  right: 135px
+}
+
+.bloque-piedras{
+  width: 96px;
+  height: 32px;
+  background-image: url("images/super-mario/brick-block.png");
+  position: absolute;
+  top: 212px;
+  left: 870px
+}
+
+.bloque-pregunta-1 {
+  width: 75px;
+  height: 75px;
+  background-image: url("images/super-mario/pregunta.gif");
+  position: absolute;
+  bottom: 300px;
+  left: 725px
+}
+
+.bloque-pregunta-2 {
+  width: 75px;
+  height: 75px;
+  background-image: url("images/super-mario/pregunta.gif");
+  position: absolute;
+  bottom: 300px;
+  left: 870px
+}
+
+.bloque-pregunta-3 {
+  width: 75px;
+  height: 75px;
+  background-image: url("images/super-mario/pregunta.gif");
+  position: absolute;
+  top: 170px;
+  left: 800px
+}
+
+.bloque-pregunta-4 {
+  width: 75px;
+  height: 75px;
+  background-image: url("images/super-mario/pregunta.gif");
+  position: absolute;
+  top: 170px;
+  left: 960px
+}
+
+.piedra-1 {
+  width: 80px;
+  height: 75px;
+  background-image: url("images/super-mario/stone-block.png");
+  position: absolute;
+  bottom: 300px;
+  left: 650px
+}
+
+.piedra-2 {
+  width: 80px;
+  height: 75px;
+  background-image: url("images/super-mario/stone-block.png");
+  position: absolute;
+  bottom: 300px;
+  left: 795px
+}
+
+
+.nube-pequeña {
+  width: 204px;
+  height: 156px;
+  background-image: url("images/super-mario/small-cloud.png");
+  position: absolute;
+  top: 10px;
+}
+
+.nube-grande {
+  width: 332px;
+  height: 166px;
+  background-image: url("images/super-mario/big-cloud.png");
+  position: absolute;
+}
+
+.nube-rapida-izquierda {
+  animation: aparece-izquierda 8s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-rapida-derecha {
+  animation: aparece-derecha 8s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-muy-rapida-izquierda {
+  animation: aparece-izquierda 5s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-muy-rapida-derecha {
+  animation: aparece-derecha 5s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-lenta-izquierda{
+  animation: aparece-izquierda 20s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-lenta-derecha{
+  animation: aparece-derecha 20s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-muy-lenta-izquierda {
+  animation: aparece-izquierda 30s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-muy-lenta-derecha {
+  animation: aparece-derecha 30s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-media-izquierda {
+  animation: aparece-izquierda 15s ease infinite forwards;
+  top: 10px;
+}
+
+.nube-media-derecha {
+  animation: aparece-derecha 15s ease infinite forwards;
+  top: 10px;
+}
+
+
+@keyframes arriba-abajo {
+  0% { bottom: 250px;}
+  50% { bottom: 300px;}
+  100% { bottom: 250px; }
+}
+
+@keyframes forward {
+  100% { background-position: -3000px; }
+}
+
+@keyframes aparece-izquierda {
+    from {
+         transform: translateX(-20vw);
+    }
+    to {
+         transform: translateX(110vw);
+    }
+}
+
+
+@keyframes aparece-derecha {
+    from {
+         transform: translateX(100vw);
+    }
+    to {
+      transform: translateX(-20vw);
+    }
+}
+
+@keyframes diagonal {
+  0% { bottom: 340px; left:430px;}
+  50% { bottom: 170px; left:600px;}
+  100% { bottom: 5px; left:850px;}
+}
+
+@keyframes aparece-planta {
+  0% { bottom: 120px; left:190px;}
+  50% { bottom: 240px; left:190px;}
+  100% { bottom: 120px; left:190px;}
+}
